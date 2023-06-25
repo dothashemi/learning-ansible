@@ -1,0 +1,5 @@
+---
+- name: initialize debian servers
+  hosts: debian
+  roles:
+    - debian-init

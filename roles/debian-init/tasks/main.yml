@@ -1,0 +1,12 @@
+---
+- name: install required packages
+  apt:
+    name: "{{ item }}"
+    state: latest
+    update_cache: yes
+  loop:
+    - tmux
+    - jq
+    - net-tools
+    - vim
+    - tcpdump

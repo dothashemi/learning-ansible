@@ -1,0 +1,5 @@
+---
+- name: initialize redhat servers
+  hosts: redhat
+  roles:
+    - redhat-init

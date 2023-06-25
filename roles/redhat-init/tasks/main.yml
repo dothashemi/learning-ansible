@@ -1,0 +1,10 @@
+---
+- name: install required packages
+  yum:
+    name:
+      - tmux
+      - jq
+      - net-tools
+      - vim
+      - tcpdump
+    state: latest

@@ -1,0 +1,5 @@
+---
+- name: update redhat servers
+  hosts: redhat
+  roles:
+    - redhat-update

@@ -1,0 +1,5 @@
+---
+- name: update and upgrade debian servers
+  hosts: debian
+  roles:
+    - debian-update
