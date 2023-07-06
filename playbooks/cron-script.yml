@@ -1,0 +1,9 @@
+---
+- name: run script with cron in all servers
+  hosts: all
+  tasks:
+    - name: run script file
+      cron:
+          name: run script at every minute
+          user: root
+          job: "/root/script.sh"
